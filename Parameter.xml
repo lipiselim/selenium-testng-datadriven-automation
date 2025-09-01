@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1" parallel="tests">
+
+    <test name="positiveTesting">
+        <parameter name="username" value="edureka"/>
+        <parameter name="password" value="edureka123"/>
+        <classes>
+            <class name="sign_up.megnum.ParameterizeTesting"/>
+        </classes>
+    </test>
+
+    <test name="NegitiveTesting">
+        <parameter name="username" value="india"/>
+        <parameter name="password" value="india345"/>
+        <classes>
+            <class name="sign_up.megnum.ParameterizeTesting"/>
+        </classes>
+    </test>
+
+    <test name="RendomTesting">
+        <parameter name="username" value="heLlo"/>
+        <parameter name="password" value="heLlo345"/>
+        <classes>
+            <class name="sign_up.megnum.ParameterizeTesting"/>
+        </classes>
+    </test>
+
+</suite>
