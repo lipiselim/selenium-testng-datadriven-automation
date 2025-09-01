@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LogInWithValidData.xml">
+    <test name="Valid_DATA">
+        <parameter name="email" value="selim39@gmail.com"/>
+        <parameter name="password" value="Test@2121"/>
+        <classes>
+            <class name="iadv3_Automation.Test.User_Login_WithValidData">
+                <methods>
+                    <include name="verify_Login_With_Valid_Data"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
